@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Age Checker",
+  "version": "1.0",
+  "description": "Display how old this page is",
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "js": ["js/jquery.min.js", "js/main.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
